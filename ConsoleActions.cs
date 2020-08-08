@@ -22,7 +22,7 @@ using Bam.Net.Automation;
 namespace Bam.Net.Application
 {
     [Serializable]
-    public class ConsoleActions : CommandLineTestInterface
+    public class ConsoleActions : CommandLineTool
     {        
         static ServiceProxyServer server;
 
