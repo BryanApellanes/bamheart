@@ -4,7 +4,7 @@ Bamheart.exe provides the core set of services for Bam.Net.  Services include:
 
 - UserRegistryService
 - ConfigurationService
-
+  
 
 ## UserRegistryService
 
