@@ -59,13 +59,13 @@ namespace Bam.Net.Application
 
             if(string.IsNullOrEmpty(serviceInfo))
             {
-                OutLineFormat("Please specify the path to the service info file.");
+                Message.PrintLine("Please specify the path to the service info file.");
                 Exit(1);
             }
             FileInfo svcInfoFile = new FileInfo(serviceInfo);
             if (!svcInfoFile.Exists)
             {
-                OutLineFormat("Specified service info file was not found: {0}", svcInfoFile.FullName);
+                Message.PrintLine("Specified service info file was not found: {0}", svcInfoFile.FullName);
                 Exit(1);
             }
             ConsoleLogger logger = new ConsoleLogger
@@ -79,7 +79,7 @@ namespace Bam.Net.Application
 
         internal static ServiceRegistry StartServer(out HostPrefix[] hostPrefixes)
         {
-            OutLineFormat("Config file: {0}", ConsoleColor.Yellow, Config.Current.File.FullName);
+            Message.PrintLine("Config file: {0}", ConsoleColor.Yellow, Config.Current.File.FullName);
             HostPrefix[] prefixes = HostPrefix.FromBamProcessConfig();
             ILogger logger = GetLogger();
             Log.Default = logger;
