@@ -4,7 +4,7 @@
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>Bam.Net.Application</RootNamespace>
     <PackageId>bamheart</PackageId>
-    <Version>1.0.5-test+8cf3904</Version>
+    <Version>1.0.5-test+8b2bddb</Version>
     <Authors>Bryan Apellanes</Authors>
     <Company>Three Headz</Company>
     <NoPackageAnalysis>true</NoPackageAnalysis>
