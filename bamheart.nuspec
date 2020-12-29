@@ -1,7 +1,7 @@
 ﻿<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>bamheart</id>
-    <version>1.0.5-test+8b2bddb</version>
+    <version>1.0.5-test+17f5450</version>
     <authors>Bryan Apellanes</authors>
     <description>bamheart</description>
   </metadata>
