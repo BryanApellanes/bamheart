@@ -2,6 +2,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>Bam.Net.Application</RootNamespace>
     <PackageId>bamheart</PackageId>
     <Version>1.0.5-test+17f5450</Version>
