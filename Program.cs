@@ -14,7 +14,9 @@ namespace Bam.Net.Application
         {
             TryWritePid(true);
             IsolateMethodCalls = false;
-            ExecuteMain(args);
+            AddSwitches(typeof(ConsoleActions));
+            AddConfigurationSwitches();
+            ExecuteMainOrInteractive(args);
         }
     }
 }
