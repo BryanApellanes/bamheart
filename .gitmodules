@@ -1,0 +1,12 @@
+[submodule "bamd"]
+	path = bamd
+	url = https://github.com/BryanApellanes/bamd.git
+[submodule "bambot"]
+	path = bambot
+	url = https://github.com/BryanApellanes/bambot.git
+[submodule "bamdns"]
+	path = bamdns
+	url = https://github.com/BryanApellanes/bamdns.git
+[submodule "bamfs"]
+	path = bamfs
+	url = https://github.com/BryanApellanes/bamfs.git
