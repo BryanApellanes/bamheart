@@ -1,21 +1,27 @@
 ﻿# Bamheart (Documentation is a WIP)
 
-Bamheart.exe provides the core set of services for Bam.Net.  Services include:
+Bamheart provides the core set of services for Bam.Net.  Services include:
 
 - UserRegistryService
+- ApplicationRegistryService
 - ConfigurationService
-  
+- DataService  
+- PresentationService
+- SystemLoggerService
+- NotificationService
 
 ## UserRegistryService
 
 UserRegistryService implements the interfaces IUserManager, IUserResolver and IRoleResolver.
 
+## ApplicationRegistryService
+
 ## ConfigurationService
 ConfigurationService implements the interface IConfigurationService.
 
-## OAuthService (not implemented)
+## DataService
 
-## FileService
+## PresentationService
 
 ## SystemLoggerService
 
