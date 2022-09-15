@@ -1,6 +1,3 @@
-[submodule "bamd"]
-	path = bamd
-	url = https://github.com/BryanApellanes/bamd.git
 [submodule "bamdns"]
 	path = bamdns
 	url = https://github.com/BryanApellanes/bamdns.git
