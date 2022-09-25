@@ -10,3 +10,6 @@
 [submodule "submodules/bamfs"]
 	path = submodules/bamfs
 	url = https://github.com/BryanApellanes/bamfs.git
+[submodule "submodules/bam.core"]
+	path = submodules/bam.core
+	url = git@github.com:BryanApellanes/Bam.Core.git
