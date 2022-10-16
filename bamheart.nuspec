@@ -1,12 +1,13 @@
 ﻿<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>bamheart</id>
-    <version>1.0.5-test+17f5450</version>
+    <version>2.0.0</version>
     <authors>Bryan Apellanes</authors>
     <description>bamheart</description>
+    <license type="expression">MIT</license>
   </metadata>
   <files>
-    <file src="_._" target="lib/net5.0" />
-    <file src="$publishdir$\net5.0\**\*" target="tools/net5.0" />
+    <file src="_._" target="lib/net6.0" />
+    <file src="$publishdir$\net5.0\**\*" target="tools/net6.0" />
   </files>
 </package>

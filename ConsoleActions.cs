@@ -43,8 +43,8 @@ namespace Bam.Net.Application
         [ConsoleAction("S", "Start the Heart server")]
         public static void StartServerAndPause()
         {
-            ServiceRegistry serviceRegistry = StartServer(out HostPrefix[] hostPrefixes);
-            hostPrefixes.Each(h => OutLine(h.ToString(), ConsoleColor.Cyan));
+            ServiceRegistry serviceRegistry = StartServer(out HostBinding[] hostPrefixes);
+            hostPrefixes.Each(h => Message.PrintLine(h.ToString(), ConsoleColor.Cyan));
             Pause($"Heart server is serving service registry {serviceRegistry.Name}");
         }
 
@@ -77,15 +77,15 @@ namespace Bam.Net.Application
             throw new NotImplementedException("This service needs to be updated to deploy to the bam ring cluster");
         }
 
-        internal static ServiceRegistry StartServer(out HostPrefix[] hostPrefixes)
+        internal static ServiceRegistry StartServer(out HostBinding[] hostBindings)
         {
             Message.PrintLine("Config file: {0}", ConsoleColor.Yellow, Config.Current.File.FullName);
-            HostPrefix[] prefixes = HostPrefix.FromBamProcessConfig();
+            HostBinding[] prefixes = HostBinding.FromBamProcessConfig();
             ILogger logger = GetLogger();
             Log.Default = logger;
             ServiceRegistry serviceRegistry = CoreServiceRegistryContainer.Create();
             server = serviceRegistry.ServeRegistry(prefixes, logger);
-            hostPrefixes = prefixes;
+            hostBindings = prefixes;
             return serviceRegistry;
         }
 
