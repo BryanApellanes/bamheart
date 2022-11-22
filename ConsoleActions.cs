@@ -32,11 +32,11 @@ namespace Bam.Net.Application
             if (server != null)
             {
                 server.Stop();
-                OutLine("Heart stopped", ConsoleColor.Yellow);
+                Message.PrintLine("Heart stopped", ConsoleColor.Yellow);
             }
             else
             {
-                OutLine("Heart server not running");
+                Message.PrintLine("Heart server not running");
             }
         }
 
