@@ -16,3 +16,6 @@
 [submodule "submodules/bamski"]
 	path = submodules/bamski
 	url = https://github.com/BryanApellanes/bamski.git
+[submodule "bam.remote"]
+	path = bam.remote
+	url = https://github.com/BryanApellanes/bam.remote.git
