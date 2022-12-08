@@ -36,6 +36,9 @@
     <Content Include="heart.ico" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\submodules\bam.core\bam.core\bam.core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
     <None Update="int-svcinfo.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -45,9 +48,6 @@
     <None Update="www-svcinfo.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="submodules\bam.core\bam.core\bam.core.csproj" />
   </ItemGroup>
   <Target Name="PublishAll" BeforeTargets="GenerateNuspec">
     <ItemGroup>
